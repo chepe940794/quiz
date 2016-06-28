@@ -1,0 +1,50 @@
+﻿@model Quizz.Models.ExpModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExpModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Oficio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oficio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Exp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Exp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trabajo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
